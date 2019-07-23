@@ -1,0 +1,102 @@
+body{background: black; height: 100vh; min-width: 768px;}
+.inst{
+    width:100%;
+    color:white;
+    margin-bottom:16px;
+    text-align: center;
+}
+.btnAttack{
+    width: 160px;
+    height: 160px;
+    background: url(../images//btnAttack.png);
+    margin:0 auto;
+    cursor: pointer;
+}
+#fighterPit{
+    display: flex;
+    padding:24px 36px 0px 36px;
+}
+.card{
+    cursor: pointer; 
+    margin:24px;
+    /* width:calc((100% - 120px) / 4) !important; */
+    width:124px;
+    padding:12px;
+    color:white;
+}
+.card-body{
+    padding:0px;
+}
+#player1{background:  rgb(86, 165, 234);}
+#player2{background:  rgb(49, 49, 49);}
+#player3{background:  rgb(117, 0, 2);}
+#player4{background:  rgb(143, 148, 93);}
+.defeated{opacity:0.3; transition: 2s; cursor: not-allowed;}
+#healthHolders {
+    height:50px;
+}
+.healthText{
+    color:white;
+    position: absolute;
+    top:16px;
+    left:calc(50% - 50px);
+    text-align: right;
+}
+.healthText.opp{
+    text-align: left;
+    left:calc(50% + 26px);
+}
+.combatArena{
+    position: relative;
+    height: calc(100vh - 287px);
+}
+.mainContent{
+    position: relative;
+}
+.fighterImg{
+    position: absolute;
+    top:0px;
+    height:calc(100vh - 287px);
+    width:300px;
+    background-repeat: no-repeat;
+}
+.rtF{
+    right:0px;
+}
+.silHolder{
+    padding-top:96px;
+}
+.bkImg{
+    background: url(../images/portalWindow.png) no-repeat;
+    height: 157px;
+    margin:0px auto;
+    width:500px;
+}
+.healthBarHolder{
+    width:197px;
+    height:12px;
+}
+.healthBar{
+    height: 4px;
+    margin:4px 0px;
+    background:#20c2d1;
+    box-shadow: 2px -2px 15px #79cad1, 2px 2px 15px #79cad1;
+    border-top-right-radius:2px;
+    border-bottom-right-radius:2px;
+    transition: 1s;
+}
+.myHealth .healthBar{
+    border-top-left-radius:2px;
+    border-bottom-left-radius:2px;
+    border-top-right-radius:0px;
+    border-bottom-right-radius:0px;
+    background:#f52004;
+    box-shadow: -2px -2px 15px #eeb8b1, -2px 2px 15px #eeb8b1;
+}
+.lsHandle{
+    height: 12px;
+    width:72px;
+    background: no-repeat url(../images/lsHandle.png);
+}
+.oppLsHandle{transform: rotate(180deg); margin-left:3px;}
+.myLsHandle{margin-right:3px;}
